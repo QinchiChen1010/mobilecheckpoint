@@ -1,0 +1,282 @@
+/*==================================================================*/
+/*                           Sementic Tags                          */
+/*==================================================================*/
+
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+html{
+	font-size: 14px;
+	font-family: Helvetica, sans-serif;
+}
+body{
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+header{
+	padding-top: 0;
+}
+
+footer p{
+	padding-top: 3rem;
+	text-align: center;
+	font-style: italic;
+}
+
+main{
+	width: 100%;
+}
+
+nav{
+	margin: 0;
+	padding: 0;
+}
+
+/*==================================================================*/
+/*                            Text styles                           */
+/*==================================================================*/
+a {
+	text-decoration: none;
+}
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2rem;
+	line-height: 2.2rem;
+	font-weight: bold;
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 1.5rem;
+	line-height: 1.7rem;
+	font-weight: bold;
+}
+p {
+	font-size:1rem;
+	line-height: 1.2rem;
+}
+
+
+/*==================================================================*/
+/*                    Top navigation bar                            */
+/*==================================================================*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-color: #FFFFFF;
+	height: 20vh;
+}
+.nav_links a{
+	color:#8a8a8a;
+	margin: 0.8em;
+	line-height: 1.8rem;
+}
+.nav_links a:hover{
+	font-weight: bold;
+}
+.active a{
+	color:#000000;
+}
+header img{
+	width: 6vh;
+	margin: 0.8em;
+}
+.nav_links{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*==================================================================*/
+/*                    bottom navigation bar                         */
+/*==================================================================*/
+footer nav ul{
+	padding-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer nav ul li a{
+	color:#8a8a8a;
+	line-height: 1.5rem;
+}
+
+footer nav ul li a:hover{
+	text-decoration: underline;
+}
+
+.bottom_active a{
+	color:#000000;
+}
+
+/*==================================================================*/
+/*                    homepage intro part.                          */
+/*==================================================================*/
+@keyframes bg-animation{
+	0% {background-position: left;}
+	100% {background-position: right;}
+}
+.intro{
+	height: 80vh;
+	background-image: linear-gradient(
+		45deg,
+		#845ec2,
+		#d65db1,
+		#ff6f91,
+		#ff9671 );
+	background-size: 400%;
+	animation: bg-animation 15s infinite alternate;
+}
+.introtext{
+	padding: 1.6rem;
+	border-radius: 1em;
+	position:absolute;
+	left:25%;
+	top:40%;
+	height: 30vh;
+	width: 50vw;
+	color:#FFFFFF
+}
+
+.skip-button{
+	background-color: #FFFFFF;
+	width: 8rem;
+	height: 1.8rem;
+	border-radius: 0.5rem;
+	text-align: center;
+	font-size: 0.8rem;
+	font-weight: bold;
+	position:relative;
+	margin-top: 1.5rem;
+	padding-top: 1rem;
+}
+
+
+.keywords{
+	color: #332404;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+/*==================================================================*/
+/*                    homepage project list.                        */
+/*==================================================================*/
+
+
+/*==================================================================*/
+/*                        download button                           */
+/*==================================================================*/
+.button {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	overflow: hidden;
+	margin: auto;
+	border-radius: 5px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+	width: 300px;
+	height: 100px;
+	line-height: 100px;
+	background-color: #34B3A0;
+	color: #ffffff;
+  }
+
+  .button span,
+  .button .icon {
+	position: absolute;
+	display: block;
+	height: 100%;
+	text-align: center;
+  }
+
+  .button span {
+	width: 72%;
+	left: 0px;
+	line-height: inherit;
+	font-size: 22px;
+  }
+
+  .button .icon {
+	right: 0;
+	width: 28%;
+  }
+
+  .button .icon .fa {
+	font-size: 30px;
+	vertical-align: middle;
+  }
+
+  .button span,
+  .button div,
+  .button i {
+	transition: all 1.2s ease-out 0.2s;
+  }
+
+  .icon {
+	width: 200px;
+	background-color: #1A7B72;
+  }
+
+  .button:hover span {
+	left: -72%;
+  }
+
+  .button:hover .icon {
+	width: 100%;
+  }
+
+  .button:hover .icon .fa {
+	font-size: 45px;
+  }
+
+/*==================================================================*/
+/*                  @media   screens                                */
+/*==================================================================*/
+
+/* web screen, tablet landscape */
+@media screen and (min-width: 768px){
+    html{
+		font-size: 18px;
+	}
+	/* top navigation */
+	header{
+        flex-direction: row;
+        justify-content: space-between;
+        position: sticky;
+        top:0;
+        width: 100%;
+		height: 10vh;
+    }
+    .nav_links{
+        display: flex;
+		flex-direction: row;
+        justify-content: space-between;
+    }
+	/* bottom navigation */
+	footer nav ul{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	footer nav ul li::before{
+		content:"👍 ";
+	}
+
+	/* homepage intro */
+	.intro{
+		height: 90vh;
+	}
+  }
+
+/* reduce motion */
+@media screen and (prefers-reduced-motion: reduce){
+	html{
+	  animation: none;
+	}
+  }
