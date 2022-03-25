@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!--  TIP
-	You will find any errors from the head section using the console. -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/monogram.png">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<title>Xiao O</title>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7W05M0JV0N"></script>
 	<script>
@@ -16,35 +15,83 @@
   	gtag('js', new Date());
   	gtag('config', 'G-7W05M0JV0N');
 	</script>
-	<title>Xiao O</title>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400&display=swap" rel="stylesheet">
+	<!--font awesome icons-->
+	<script src="https://kit.fontawesome.com/6d6b74b379.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
 		<a href="index.html"><img src="images/logo.png" alt="Eva's logo: QC monogram" ></a>
 		<!-- Nav is a sematic tag page that aids accessibility -->
-		<nav>
+		<nav aria-label="webpage navigation bar">
 			<ul class="nav_links">
-				<li><a href = "index.html#project" >UX Design</a></li>
-				<li><a href = "about.html">About Me</a></li>
+				<li><a href = "index.html#project" aria-label="back to project list">UX Design</a></li>
+				<li><a href = "about.html" aria-label="about me page">About Me</a></li>
+				<li><a href = "contact.html" aria-label="contact me">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<h1>Little O</h1>
-		<img src = "images/xiao_o/cover.png" alt="Xiao O Project Cover: Little O flying to the planet" width="200"/>
-		<img src = "images/xiao_o/intro.png" alt="Little O is a voice assistant project" width="200"/>
-		<img src = "images/xiao_o/problem-remote-control.png" alt="The simple remote control doesn't fit the cyber security requirement" width="200"/>
-		<img src = "images/xiao_o/solution-flow-remote-control.png" alt="Remote control flow was redesigned and security requirement was considered" width="200"/>
-		<img src = "images/xiao_o/solutionn-ui-remote-control.png" alt="Final UI solution for remote control" width="200"/>
-		<h2>Overview</h2>
-		<p>“Mr.O” is a voice assistance project. It includes two parts: the voice assistance on the Buick cars & the voice assistance on the OnStar App (the IoV tool app that controls the car remotely )</p>
+		<div class="cover"><img src="images/xiao_o/cover.png" alt="Little O is flying to the Planet"></div>
 
+		<h1>Little O – VUI</h1>
+		<div class="overview">
+			<h2>Overview</h2>
+			<p>Little O is a voice assistance project. It is the first voice assistance on the Buick cars and the OnStar App ( the IoV tool app that controls the vehicle remotely ). This project improves connectivity among “People, Car, and Life.”</p>
+		</div>
 
-		<h2>Requirement</h2>
-		<p>- Design the interface for the 118 listed user scenarios. (These user scenarios include car condition checking scenarios, navigation scenarios, remote car control scenarios, etc. )</p>
-		<p>- Promote OnStar App's functions that are less used by the users.</p>
-		<p>- Enhance Mr.O's IP image as a voice assistance. </p>
+		<div class="myrole">
+			<h2>My Work</h2>
+			<p>👍 I designed the interaction for the 118 use cases according to the requirements.</p>
+			<p>👍 I designed the mobile interfaces that assist the voice interaction.</p>
+			<p>👍 I supported the conversation design supplier and helped her understand the interaction related to our vehicles. </p>
+		</div>
 
+		<div class="glance">
+			<h2>Little O at a Glance</h2>
+			<div class="onePic">
+				<p>Check Vehicle Condition</p>
+				<img src="images/xiao_o/condition.png" alt="">
+			</div>
+
+			<div class="onePic">
+				<p>Navigate to Your Car</p>
+				<img src="images/xiao_o/navigation.png" alt="">
+			</div>
+
+			<div class="onePic">
+				<p>Control Your Car Remotely</p>
+				<img src="images/xiao_o/remote.png" alt="">
+			</div>
+		</div>
+
+		<div class="pagebreak">
+			<h2>How to find all the path?</h2>
+			<p>It was challenging to list all the possible user paths for the user cases like “Vehicle Data Query” and “Navigation”.</p>
+		</div>
+
+		<div class="steps">
+			<div class="onestep">
+				<h3>Step 1</h3>
+				<p>First I understand that most vehicle data queries can be considered as one-turn dialogues. Take vehicle data query as an example. See the voice dialogue card below.</p>
+				<img src="images/xiao_o/voice.png" alt="user asked car data and little o responded accordingly">
+			</div>
+
+			<div class="onestep">
+				<h3>Step 2</h3>
+				<p>In my approach to finding all the situations, I did secondary research on the Buick car models. And then confirmed the list with engineers to ensure the availability of the data. </p>
+				<img src="images/xiao_o/data.png" alt="user asked car data and little o responded accordingly">
+			</div>
+
+			<div class="onestep">
+				<h3>Step 3</h3>
+				<p>According to the data I found, I finished all the user flows and interfaces. </p>
+				<img src="images/xiao_o/ui.png" alt="user asked car data and little o responded accordingly">
+			</div>
+		</div>
 
 	</main>
 

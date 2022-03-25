@@ -18,26 +18,31 @@
   	gtag('js', new Date());
   	gtag('config', 'G-7W05M0JV0N');
 	</script>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400&display=swap" rel="stylesheet">
+	<!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/6d6b74b379.js" crossorigin="anonymous"></script>
 	<title>Eva Qinchi Chen</title>
 </head>
 <!-- All of the visible code in the page belongs in the body tag -->
 <body>
 	<!-- Header is a sematic tag page that aids readability -->
 	<header>
-		<a href="index.html"><img src="images/logo.png" alt="Eva's logo: QC monogram" ></a>
+		<a href="index.html"><img src="images/logo.png" alt="Eva's logo: QC monogram" id="logo"></a>
 		<!-- Nav is a sematic tag page that aids accessibility -->
 		<nav>
 			<ul class="nav_links">
 				<li class="active"><a href = "#project" >UX Design</a></li>
 				<li><a href = "about.html">About Me</a></li>
+				<li><a href = "contact.html">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<!-- Every page should have a main tag for accessibility -->
 	<main>
 		<div class="intro">
-			<!-- The h1 is a semantic tag that aids accessibility -->
 			<div class="introtext">
 				<h1>Hi, I'm Eva Chen</h1>
 				<p>I'm currently a master's student studying HCI at University of Michigan
@@ -49,20 +54,50 @@
 		</div>
 
 		<div id="project">
-			<a href = "membership.html"><img src = "images/membership/cover.png" alt="Membership Project Cover: mobile app with a space style design" width="200"/></a>
-			<h2>Membership System</h2>
-			<p class="keywords">#Gamification #Experimental UI #Design Workshop</p>
-			<p>The membership system is created to incent the users to be active using the OnStar service.</p>
 
-			<a href = "xiao_o.html"><img src = "images/xiao_o/cover.png" alt="Xiao O Project Cover: Little O flying to the planet" width="200"/></a>
-			<h2>Xiao O</h2>
-			<p class="keywords">#Voice Assistance #IP Image </p>
-			<p>Little O is a voice assistant on both OnStar mobile app and Buick vehicles. It improves the connectivity among “People, Car, Life.”</p>
+			<div class="one_project">
+				<div class="project_image">
+					<a href = "xiao_o.html">
+						<img src = "images/xiao_o/cover.png" alt="Xiao O Project Cover: Little O flying to the planet" />
+					</a>
+				</div>
+				<div class="project_text">
+					<h2>Xiao O</h2>
+					<p class="keywords">#Voice Assistance #IP Image </p>
+					<p>Little O is a voice assistant on both OnStar mobile app and Buick vehicles. It improves the connectivity among “People, Car, Life.”</p>
+				</div>
+			</div>
 
-			<a href = "eapp.html"><img src = "images/eapp/cover.png" alt="EAPP Project Cover: Showcase of UI design of EAPP" width="200"/></a>
-			<h2>EAPP</h2>
-			<p class="keywords">#B2B #Data Driven Service #User Interview </p>
-			<p>General Motors car dealerships use EAPP to improve their relationship with car owners. </p>
+			<div class="one_project">
+				<div class="project_image">
+					<a href = "membership.html">
+						<img src = "images/membership/cover.png" alt="Membership Project Cover: mobile app with a space style design"/>
+					</a>
+				</div>
+				<div class="project_text">
+					<h2>Membership System</h2>
+					<p class="keywords">#Gamification #Experimental UI #Design Workshop</p>
+					<p>The membership system is created to incent the users to be active using the OnStar service.</p>
+				</div>
+			</div>
+
+
+			
+
+
+			<div class="one_project">
+				<div class="project_image">
+					<a href = "eapp.html">
+						<img src = "images/eapp/cover.png" alt="EAPP Project Cover: Showcase of UI design of EAPP"/>
+					</a>
+				</div>
+				<div class="project_text">
+					<h2>EAPP</h2>
+					<p class="keywords">#B2B #Data Driven Service #User Interview </p>
+					<p>General Motors car dealerships use EAPP to improve their relationship with car owners. </p>
+				</div>
+			</div>
+
 		</div>
 	</main>
 

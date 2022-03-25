@@ -23,6 +23,12 @@
   	gtag('js', new Date());
   	gtag('config', 'G-7W05M0JV0N');
 	</script>
+	<!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/6d6b74b379.js" crossorigin="anonymous"></script>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400&display=swap" rel="stylesheet">
 	<title>About Me</title>
 </head>
 
@@ -36,29 +42,38 @@
 			<ul class="nav_links">
 				<li><a href = "index.html#project" >UX Design</a></li>
 				<li class="active"><a href = "about.html">About Me</a></li>
+				<li><a href = "contact.html">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<!-- Every page should have a main tag for accessibility -->
 	<main>
-		<h1>About Me</h1>
-		<img src = "images/my-pic.png" alt="Eva is holding a green frog stuffed animal" width="200"/>
+		<div class="coverhead">
+			<h1 class="about_me">About Me</h1>
+		</div>
 
-		<p>Hi, my name is Eva (Qinchi) Chen. I'm a curious multi-disciplinary UX designer with  2 years of working experience in digital products. I led an experimental membership system design, a voice assistance design, a data visualization product design, and multiple B2B products designs.</p>
-
-		<p>I'm particularly skilled in identifying ambiguous product problems by conducting user research and experienced with leading creative workshops for problem-solving. </p>
-
-		<p>I'm currently pursuing a Master's Degree at the University of Michigan. I'm studying Information Science - UX Research and Design. My graduation time is Dec 2022. </p>
-
-		<p>I'm currently looking for a full-time opportunity in the Great Seattle Area. Please download my resume or connect with me on my LinkedIn.</p>
-
-		<a class="fancy button">
-			<span>My Resume</span>
-			<div class="icon">
-			  <i class="fa fa-arrow-down"></i>
+		<div class="contain_about">
+			<div class="profile">
+				<img src = "images/my-pic.png" alt="Eva is holding a green frog stuffed animal" width="200"/>
 			</div>
-		</a>
+
+			<div class="self-intro">
+				<p>Hi, my name is Eva (Qinchi) Chen. I'm a curious multi-disciplinary UX designer with  2 years of working experience in digital products. I led an experimental membership system design, a voice assistance design, a data visualization product design, and multiple B2B products designs.</p>
+
+				<p>I'm particularly skilled in identifying ambiguous product problems by conducting user research and experienced with leading creative workshops for problem-solving. </p>
+
+				<p>I'm currently pursuing a Master's Degree at the University of Michigan. I'm studying Information Science - UX Research and Design. My graduation time is Dec 2022. </p>
+
+				<p>I'm currently looking for a full-time opportunity in the Great Seattle Area. Please download my resume or connect with me on my LinkedIn.</p>
+			</div>
+
+			<div class="linkedIn">
+				<a href="https://www.linkedin.com/in/eva-qinchi-chen/" aria-label="LinkedIn">
+					<i class="fa-brands fa-linkedin fa-2xl"></i>
+				</a>
+			</div>
+		</div>
 	</main>
 
 	<!-- Footer is a sematic tag page that aids readability -->
